@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <title>Rammaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/Favicon/Favicon.png">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/Design-System.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Signup -->
+    <div class="signPage">
+        <div class="section">
+            <!-- Page Header -->
+            <div class="container">
+                <img src="./assets/imgs/Logo/icon-text/blue.svg" alt="Website Logo">
+                <h3 class="pageTitle">Create Account</h3>
+            </div>
+
+            <!-- Page Content -->
+            <div class="container">
+                <!-- Signup Form -->
+                <form method="post" action="./home.html" class="inputsContainer">
+                    <!-- User Name -->
+                    <div class="row">
+                        <!-- Frist Name -->
+                        <div class="input">
+                            <label for="frist-name">Frist Name:</label>
+                            <div class="inputContainer">
+                                <input type="text" name="frist-name" id="frist-name" placeholder="Enter Your Frist Name" oninput="inputHandlling(this)">
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="input">
+                            <label for="last-name">Last Name:</label>
+                            <div class="inputContainer">
+                                <input type="text" name="last-name" id="last-name" placeholder="Enter Your Last Name" oninput="inputHandlling(this)">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone Number -->
+                    <div class="input">
+                        <label for="phone-number">Phone Number:</label>
+                        <div class="inputContainer">
+                            <input type="number" inputmode="numeric" pattern="[0-9]*" name="phone-number" id="phone-number" placeholder="Enter Your Phone Number" oninput="inputHandlling(this)">
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <div class="inputContainer">
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email" oninput="inputHandlling(this)">
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input passwordInp">
+                        <label for="password">Password:</label>
+                        <div class="inputContainer">
+                            <input type="password" name="password" id="password" placeholder="Enter Your Password" oninput="inputHandlling(this)">
+                            <div class="inputIcon" onclick="passwordInpHandlling(this)">
+                                <svg width="20" height="20">
+                                    <use href="./assets/icons.svg#eye"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Call Buttons -->
+                    <div class="actionCallButtons">
+                        <button type="submit" class="BTN Primary-BTN">
+                            Sign Up
+                        </button>
+
+                        <!-- Google Signup -->
+                        <div class="BTN Secondary-BTN">
+                            <img src="./assets/imgs/google-logo.svg" alt="Google Logo">
+                            <p>Signup With Google</p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Redirecting To Login -->
+                <div class="row">
+                    <p class="p-md">Have an Account?</p>
+                    <a href="./signin.html" class="p-md">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Js File -->
+    <script src="./assets/js/Design-System.js"></script>
+</body>
+</html>

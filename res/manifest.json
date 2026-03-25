@@ -1,0 +1,24 @@
+{
+    "name": "Rammaz",
+    "version": "1.0.0",
+    "author": "Moataz Aldawood",
+    "developer": {
+        "name": "Moataz Aldawood",
+        "url": "https://github.com/Moataz-Aldawood"
+    },
+    "short_name": "Rammaz",
+    "description": "موقع الكتروني لعرض اوقات الصلاة",
+    "theme_color": "#037BAF",
+    "background_color": "#F9F9F9",
+    "display": "standalone",
+    "orientation": "portrait",
+    "Scope": "/",
+    "start_url": "https://Rammaz.com/",
+    "dir": "auto",
+    "lang": "en",
+    "display_override": [
+        "window-control-overlay",
+        "standalone",
+        "browser"
+    ]
+}

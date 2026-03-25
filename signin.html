@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <title>Rammaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/Favicon/Favicon.png">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/Design-System.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Signup -->
+    <div class="signPage">
+        <div class="section">
+            <!-- Page Header -->
+            <div class="container">
+                <img src="./assets/imgs/Logo/icon-text/blue.svg" alt="Website Logo">
+                <h3 class="pageTitle">Welcome Back</h3>
+            </div>
+
+            <!-- Page Content -->
+            <div class="container">
+                <!-- Signin Form -->
+                <form method="post" action="./home.html" class="inputsContainer">
+                    <!-- Email -->
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <div class="inputContainer">
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email" oninput="inputHandlling(this)">
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input passwordInp">
+                        <label for="password">Password:</label>
+                        <div class="inputContainer">
+                            <input type="password" name="password" id="password" placeholder="Enter Your Password" oninput="inputHandlling(this)">
+                            <div class="inputIcon" onclick="passwordInpHandlling(this)">
+                                <svg width="20" height="20">
+                                    <use href="./assets/icons.svg#eye"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="row rem-forg">
+                        <!-- Remember Me -->
+                        <div class="checkBox">
+                            <input type="checkbox" id="remember-me" class="checkBoxInp">
+                            <label for="remember-me" class="checkBoxLabel">Remember Me</label>
+                        </div>
+
+                        <!-- Forgot Password -->
+                        <a href="#" class="p-md">Forgot Password?</a>
+                    </div>
+
+                    <!-- Action Call Buttons -->
+                    <div class="actionCallButtons">
+                        <button type="submit" class="BTN Primary-BTN">
+                            Sign In
+                        </button>
+
+                        <!-- Google Signin -->
+                        <div class="BTN Secondary-BTN">
+                            <img src="./assets/imgs/google-logo.svg" alt="Google Logo">
+                            <p>Signin With Google</p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Redirecting To Signup -->
+                <div class="row redirect">
+                    <p class="p-md">Don't Have an Account?</p>
+                    <a href="./signup.html" class="p-md">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Js File -->
+    <script src="./assets/js/Design-System.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <title>Rammaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/Favicon/Favicon.png">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/Design-System.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Verificiation -->
+    <div class="signPage">
+        <div class="section">
+            <!-- Page Header -->
+            <div class="container">
+                <img src="./assets/imgs/Logo/icon-text/blue.svg" alt="Website Logo">
+                <div class="textContent">
+                    <h3 class="pageTitle">Verification Code</h3>
+                    <p class="p-sm">
+                        Please enter the verification code sent
+                        to +966500000000
+                    </p>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="container">
+                <!-- Verification Form -->
+                <form method="post" action="./home.html" class="inputsContainer">
+                    <!-- Verification Code -->
+                    <div class="input verification">
+                        <label for="verification">Verification Code:</label>
+                        <div class="inputContainer">
+                            <input type="number" inputmode="numeric" pattern="[0-9]*" name="verification" id="verification" placeholder="Enter The Verification Code" oninput="inputHandlling(this)">
+                        </div>
+                    </div>
+
+                    <!-- Resend Code -->
+                    <div class="row">
+                        <p class="p-md">Didn’t Get Verification Code?</p>
+                        <a href="#" class="p-md">Resend</a>
+                    </div>
+
+                    <!-- Action Call Buttons -->
+                    <div class="actionCallButtons">
+                        <button type="submit" class="BTN Primary-BTN" style="padding-left: var(--space-12); padding-right: var(--space-12);">
+                            Enter
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Js File -->
+    <script src="./assets/js/Design-System.js"></script>
+</body>
+</html>

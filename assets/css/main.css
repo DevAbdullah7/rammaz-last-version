@@ -1,0 +1,71 @@
+/* General Styling Settings, ( This Settings Is Important For Every Page ! ) */
+
+/* Srolling Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrall Bar */
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: var(--borderRedius-SM);
+    background: var(--primaryColor-1);
+}
+
+/* Elements Dimensions Settings */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selection Settings */
+*::selection {
+    color: var(--primaryColor-2);
+    background: var(--primaryColor-1);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--typography-title);
+}
+
+/* Sections */
+.section {
+}
+
+/* Top Arrow */
+.topArrow {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 0;
+    right: var(--space-8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRedius-SM);
+    border: 1px solid transparent;
+    color: var(--primaryColor-1);
+    background: var(--primaryColor-2);
+    box-shadow: var(--shadow-SM);
+    font-size: var(--fontSize-H4);
+    text-decoration: none;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+.topArrow:hover {
+    transform: scale(1.07);
+    border: 1px solid var(--primaryColor-1);
+}
+.topArrow.active {
+    bottom: var(--space-8);
+    opacity: 1;
+}

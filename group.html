@@ -1,0 +1,393 @@
+<html lang="en">
+<head>
+    <title>Rammaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/Favicon/Favicon.png">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/Design-System.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Side Panel -->
+    <div class="sidePanel">
+        <div class="sidePanel-header">
+            <div class="sidePanel-controlling">
+                <div class="controls" onclick="document.querySelector('.sidePanel').classList.toggle('active')">
+                    <svg width="24" height="24" class="menu">
+                        <use href="./assets/icons.svg#menu"></use>
+                    </svg>
+                    <svg width="24" height="24" class="close">
+                        <use href="./assets/icons.svg#close"></use>
+                    </svg>
+                </div>
+                <img class="logo" src="./assets/imgs/Favicon/Favicon.png" alt="">
+            </div>
+            <div class="profileInfo">
+                <div class="item userImg">
+                    <img src="./assets/imgs/67982210.png" alt="">
+                </div>
+                <p class="name">Abdullah</p>
+            </div>
+            <div class="itemsContainer">
+                <a href="./home.html" class="item" title="Home" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#home"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Exit" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#logout"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sidePanel-links">
+            <div class="itemsContainer">
+                <a href="./qrcodes.html" class="item" title="Qrcodes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#qrcode"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./create-qrcode.html" class="item" title="Create Qrcode" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./themes.html" class="item" title="Themes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#colors"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Theme" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./groups.html" class="item active" title="Groups" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#groups"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Group" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="V-Cards" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#vcard"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create V-Card" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main">
+        <!-- Page Header -->
+        <div class="pageHeader">
+            <!-- Navigator -->
+            <div class="navigator">
+                <a href="#" class="navigatorStart">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#home"></use>
+                        </svg>
+                    </div>
+                </a>
+                
+                <a href="groups.html" class="navigatorItem">
+                    Groups
+                </a>
+                
+                <a href="#" class="navigatorEnd">
+                    Group Name
+                </a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="pageContent">
+            <div class="textContent">
+                <h2>Group Name</h2>
+                <p class="p-sm">
+                    Lorem ipsum dolor sit amet consectetur. Varius erat montes pharetra ipsum platea lacinia. Mattis in potenti morbi nisi at diam. Pharetra imperdiet malesuada id tempus tristique. Adipiscing pellentesque in magna turpis urna mauris elit. Et sagittis leo faucibus sed. Sit lorem condimentum blandit quis lectus elementum id ultricies tortor. Nunc augue massa est enim duis.
+                </p>
+            </div>
+            <!-- Qrcodes -->
+            <div class="qrcodes cardsContainer">
+                <div class="header">
+                    <h3 class="title">Qrcodes:</h3>
+
+                    <a href="./qrcodes.html" class="BTN Primary-BTN">
+                        <p>Show All</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#link"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title" title="Card Title Card Title Card Title Card Title Card Title">Card Title Card Title Card Title Card Title Card Title</p>
+                            <p class="text">
+                                Tap to add new products or an hint text
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#text"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                            <p class="text">
+                                Tap to add new products or an hint text
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#vcard"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                            <p class="text">
+                                Tap to add new products or an hint text Tap to add new products or an hint text Tap to add new products or an hint text
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#mail"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#whatsapp"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="qrcode.html" class="card">
+                        <div class="qrType">
+                            <svg width="24" height="24">
+                                <use href="./assets/icons.svg#wifi"></use>
+                            </svg>
+                        </div>
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                            <p class="text">
+                                Tap to add new products or an hint text
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Themes -->
+            <div class="themes cardsContainer">
+                <div class="header">
+                    <h3 class="title">Themes:</h3>
+                    <a href="./themes.html" class="BTN Primary-BTN">
+                        <p>Show All</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title" title="Card Title Card Title Card Title Card Title Card Title">Card Title Card Title Card Title Card Title Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                    
+                    <a href="./theme.html" class="card">
+                        <div class="qrcode">
+                            <img src="./assets/imgs/QRCode.png" alt="Qrcode">
+                        </div>
+                        <div class="cardContent">
+                            <p class="title">Card Title</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Action Call Buttons -->
+            <div class="actionCallButtons">
+                <a href="#" class="BTN Secondary-BTN">
+                    <p>Edit</p>
+                </a>
+                <div class="BTN Danger-BTN">
+                    <p>Remove</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="websiteInformation">
+                <a href="./home.html" class="websiteLogo">
+                    <img src="./assets/imgs/Logo/icon-text/darkBlue.svg" alt="Website Logo">
+                </a>
+
+                <!-- website Social Accounts -->
+                <div class="websiteSocial">
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#snapchat"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerPages-copyRights">
+                <div class="footerPages">
+                    <a href="#">Privacy Policy</a>
+                    <span>-</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+                <div class="copyRights">
+                    <p>Copyright 2025 &copy; All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Scrolling Button -->
+        <div class="topArrow" onclick="window.scrollTo(0,0)">
+            <svg width="24" height="24">
+                <use href="./assets/icons.svg#up-arrow"></use>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Js File -->
+    <script src="./assets/js/Design-System.js"></script>
+</body>
+</html>

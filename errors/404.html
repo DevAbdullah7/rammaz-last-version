@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <title>Rammaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/Favicon/Favicon.png">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="../assets/css/Design-System.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+    <!-- Side Panel -->
+    <div class="sidePanel">
+        <div class="sidePanel-header">
+            <div class="sidePanel-controlling">
+                <div class="controls" onclick="document.querySelector('.sidePanel').classList.toggle('active')">
+                    <svg width="24" height="24" class="menu">
+                        <use href="./assets/icons.svg#menu"></use>
+                    </svg>
+                    <svg width="24" height="24" class="close">
+                        <use href="./assets/icons.svg#close"></use>
+                    </svg>
+                </div>
+                <img class="logo" src="./assets/imgs/Favicon/Favicon.png" alt="">
+            </div>
+            <div class="profileInfo">
+                <div class="item userImg">
+                    <img src="./assets/imgs/67982210.png" alt="">
+                </div>
+                <p class="name">Abdullah</p>
+            </div>
+            <div class="itemsContainer">
+                <a href="./home.html" class="item active" title="Home" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#home"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Exit" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#logout"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sidePanel-links">
+            <div class="itemsContainer">
+                <a href="./qrcodes.html" class="item" title="Qrcodes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#qrcode"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./create-qrcode.html" class="item" title="Create Qrcode" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./themes.html" class="item" title="Themes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#colors"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Theme" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./groups.html" class="item" title="Groups" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#groups"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Group" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="V-Cards" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#vcard"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create V-Card" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="main">
+        <img src="../assets/imgs/error404.svg" alt="Error Image">
+        <div class="textContent">
+            <p class="p-md">Page not Found or you’re not allowd to be here !</p>
+            <a href="../home.html" class="BTN Primary-BTN">
+                <div class="BTNicon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M16 16.4725L11.0553 11.5L16 6.5275L14.4777 5L8 11.5L14.4777 18L16 16.4725Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <p>Back To Home</p>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="websiteInformation">
+                <a href="./home.html" class="websiteLogo">
+                    <img src="./assets/imgs/Logo/icon-text/darkBlue.svg" alt="Website Logo">
+                </a>
+
+                <!-- website Social Accounts -->
+                <div class="websiteSocial">
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="BTN Primary-BTN Icon-BTN">
+                        <svg width="24" height="24">
+                            <use href="./assets/icons.svg#snapchat"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerPages-copyRights">
+                <div class="footerPages">
+                    <a href="#">Privacy Policy</a>
+                    <span>-</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+                <div class="copyRights">
+                    <p>Copyright 2025 &copy; All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Scrolling Button -->
+        <div class="topArrow" onclick="window.scrollTo(0,0)">
+            <svg width="24" height="24">
+                <use href="./assets/icons.svg#up-arrow"></use>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Js File -->
+    <script src="../assets/js/Design-System.js"></script>
+</body>
+</html>

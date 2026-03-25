@@ -1,0 +1,442 @@
+/* testing */
+/* Styling Code Shown Box */
+.codeContainer .partTitle {
+    width: 128px !important;
+    font-size: var(--fontSize-XS) !important;
+    color: var(--typographyColor-1) !important;
+    user-select: none;
+}
+
+.codeContainer .Arrows-BTN {
+    color: var(--typographyColor-1) !important;
+    border-color: transparent !important;
+    transition: all ease-in-out .2s !important;
+    box-shadow: none !important;
+    font-size: var(--fontSize-SM) !important;
+}
+.codeContainer.active .Arrows-BTN {
+    transform: rotateX(180deg);
+}
+
+.codeContainer .partContent {
+    display: none !important;
+}
+.codeContainer.active .partContent {
+    display: flex !important;
+}
+
+.codeShown {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--space-3);
+}
+
+@media only screen and (max-width: 1375px) {
+    .section .sectionContent.Instructions .codeShown {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .codeShown {
+        width: 100%;
+    }
+}
+
+.codeShown .codeTitle {
+    font-size: var(--fontSize-SM);
+    color: var(--typographyColor-1);
+}
+
+.showCode-BTN {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRedius-XS);
+    color: var(--primaryColor-2);
+    background: var(--primaryColor-1);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* There are two choices to show the code's window in screen  */
+/* 1st: window will be static by width and height as a square and the content which came over the square will be scrolled */
+
+/* 1st: */
+pre {
+    width: 512px;
+    min-height: 320px;
+    height: fit-content;
+    overflow: scroll;
+}
+#CSSVariables pre {
+    min-width: 512px;
+    width: fit-content;
+    height: fit-content;
+    max-height: 512px;
+}
+
+/* 2sd: */
+/* pre {
+    width: fit-content;
+    height: fit-content;
+    overflow: unset;
+} */
+
+pre {
+    position: relative;
+    padding: var(--space-6) var(--space-10);
+    border-radius: var(--borderRedius-SM);
+    border: 3px solid var(--primaryColor-1);
+    text-align: start;
+    color: var(--primaryColor-2);
+    background: #333333;
+    box-shadow: var(--shadow-SM);
+    white-space: pre;
+}
+pre::selection,
+pre *::selection {
+    color: #ffffff;
+    background: var(--primaryColor-1);
+}
+pre:focus {
+    outline: none;
+}
+
+.section .sectionContent.Instructions pre {
+    width: fit-content;
+}
+@media only screen and (max-width: 1024px) {
+    pre,
+    .section .sectionContent.Instructions pre {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1375px) {
+    .section .sectionContent.Instructions pre {
+        width: 100%;
+    }
+}
+
+.copyIcon {
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRedius-XS) 0 var(--borderRedius-XS) 0;
+    border: 1px solid var(--primaryColor-1);
+    color: #ffffff;
+    background: var(--primaryColor-1);
+    cursor: pointer;
+}
+.copyIcon.copied {
+    transform: scale(1.1);
+    transform-origin: bottom right;
+}
+
+/* HTML Colors */
+pre .html.tag {
+    color: #599eed;
+}
+pre .html.tagArrow {
+    color: #969696;
+}
+pre .html.attribute {
+    color: #a0e1fb;
+}
+pre .html.className {
+    color: #ffa44a;
+}
+pre .html.functionName {
+    color: #CEBE7D;
+}
+pre .html.functionBrackets {
+    color: #fed65d;
+}
+pre .html.functionDeclaration {
+    color: #366BB9;
+}
+pre .html.comment {
+    color: #5F7E40;
+}
+
+/* CSS Colors */
+pre .css.selector {
+    color: #c18804;
+}
+pre .css.selectorBrackets {
+    color: #fed65d;
+}
+pre .css.property {
+    color: #8ED1F9;
+}
+pre .css.numProperty {
+    color: #b6af7b;
+}
+pre .css.wordProperty {
+    color: #d39255;
+}
+pre .css.propertyBrackets {
+    color: #A961B6;
+}
+pre .css.propertyYallow {
+    color: #D9CE90;
+}
+pre .css.comment {
+    color: #5F7E40;
+}
+pre .css.colorSquar {
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    margin-right: var(--space-1);
+    border: 1px solid #ffffff;
+    background: var(--primaryColor-1);
+}
+
+/* JS Colors */
+pre .js.function {
+    color: #4585C6;
+}
+pre .js.functionName {
+    color: #CEBE7D;
+}
+pre .js.functionArgument {
+    color: #85CAEC;
+}
+pre .js.mainBrackets {
+    color: #fed65d;
+}
+pre .js.secondBrackets {
+    color: #A961B6;
+}
+pre .js.declaration {
+    color: #366BB9;
+}
+pre .js.declarationName {
+    color: #70deff;
+}
+pre .js.declarationValue {
+    color: #84C6EE;
+}
+pre .js.num {
+    color: #2eff97;
+}
+pre .js.yallow {
+    color: #D9CE90;
+}
+pre .js.red {
+    color: #c47950;
+}
+/* End Code Shown Box */
+
+/* Pathes Stylling */
+.pathShown {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+    padding: var(--space-2) var(--space-6);
+    border-radius: var(--borderRedius-XS);
+    border: 1px solid var(--lightColor-1);
+    font-size: var(--fontSize-LG);
+    color: #333333;
+    background-color: #eeeeee;
+    box-shadow: var(--shadow-SM);
+}
+
+/* Stylling Design System */
+.mainContent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: var(--space-10);
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background: #ffffff;
+    box-shadow: var(--shadow-SM);
+}
+
+.section .sectionTitle {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-2) var(--space-7);
+    background: var(--lightColor-1);
+    color: var(--primaryColor-2);
+    font-size: var(--fontSize-XL);
+    font-weight: var(--fontWeight-Bold);
+}
+
+.section .sctionContent {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--space-6);
+}
+
+.section .sectionContent.Instructions {
+    flex-direction: row;
+    gap: var(--space-12);
+}
+@media only screen and (max-width: 1375px) {
+    .section .sectionContent.Instructions {
+        flex-direction: column;
+        gap: var(--space-16);
+    }
+}
+
+.part {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: var(--space-3);
+}
+.part p {
+    cursor: default;
+}
+
+.part .partTitle {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fontSize-LG);
+    font-weight: var(--fontWeight-Medium);
+    text-transform: capitalize;
+    color: var(--primaryColor-1);
+    cursor: default;
+}
+
+.part .partContent {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+}
+.part .partContent .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: var(--space-3);
+}
+
+.section#Icons .sctionContent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+}
+
+.section#Icons .iconcontainer {
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+}
+.section#Icons .iconcontainer.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .section#Icons .iconsContainer {
+        gap: var(--space-3);
+    }
+
+    .section#Icons .iconcontainer {
+        width: 55px;
+    }
+}
+
+.section#Icons .icon {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-4);
+    border-radius: var(--borderRedius-XS);
+    border: 1px solid var(--lightColor-1);
+    color: var(--lightColor-1);
+    background: #ffffff;
+    box-shadow: var(--shadow-MD);
+    cursor: pointer;
+    user-select: none;
+    transition: all ease-in-out .3s;
+}
+
+.section#Icons .icon.copied::after {
+    position: absolute;
+    content: "✔ \A copyed";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontSize-XXS);
+    text-align: center;
+    white-space: pre;
+    border-radius: var(--borderRedius-XS);
+    border: 1px solid var(--primaryColor-1);
+    color: var(--primaryColor-2);
+    background: var(--primaryColor-1);
+}
+
+
+.section#Icons .icon:hover {
+    border: 1px solid var(--primaryColor-1);
+    color: var(--primaryColor-1);
+    transform: scale(1.1)
+}
+
+.section#Icons .iconContainer p {
+    text-align: center;
+    cursor: default;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.section#Icons .iconContainer:hover p {
+    opacity: 1;
+}
