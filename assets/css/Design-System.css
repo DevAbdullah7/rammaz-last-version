@@ -406,8 +406,8 @@ p {
 .Applay-BTN {
     padding: var(--space-3) var(--space-10);
     border-radius: 0px;
-    border: 1px solid var(--primaryColor-1);
-    background: var(--primaryColor-1);
+    border: 1px solid #BD365F;
+    background: #BD365F;
 }
 .Applay-BTN:hover {
     background: var(--primaryColor-2);
@@ -417,7 +417,7 @@ p {
     color: var(--primaryColor-2);
 }
 .Applay-BTN:hover p {
-    color: var(--primaryColor-1);
+    color: #BD365F;
 }
 
 /* Danger Button */
@@ -447,12 +447,12 @@ p {
     background: #df3b3b43;
 }
 .Cancel-BTN:hover {
-    border: 1px solid var(--primaryColor-1);
+    border: 1px solid #BD365F;
     background: #df3b3b43;
 }
 
 .Cancel-BTN p {
-    color: var(--primaryColor-1);
+    color: #BD365F;
 }
 
 /* Archive Button */
@@ -465,12 +465,12 @@ p {
 }
 .Archive1-BTN:hover,
 .Archive2-BTN:hover {
-    border: 1px solid var(--primaryColor-1);
+    border: 1px solid #BD365F;
     background: #bd365f4d;
 }
 
 .Archive2-BTN {
-    border: 1px solid var(--primaryColor-1);
+    border: 1px solid #BD365F;
     border-radius: var(--borderRedius-XS);
 }
 .Archive2-BTN:hover {
@@ -479,7 +479,7 @@ p {
 
 .Archive1-BTN p,
 .Archive2-BTN p {
-    color: var(--primaryColor-1);
+    color: #BD365F;
 }
 
 /* Edit Buttons */
