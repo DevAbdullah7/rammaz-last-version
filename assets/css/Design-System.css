@@ -1741,7 +1741,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: var(--space-3) var(--space-6);
     border-radius: 0 var(--borderRedius-SM) var(--borderRedius-SM);
     border: 1px solid var(--primaryColor-1);
 }
@@ -1752,6 +1751,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     flex-direction: column;
     gap: var(--space-6);
+    padding: var(--space-3) var(--space-6);
 }
 .tap2 .tapContent .container.active {
     display: flex;
