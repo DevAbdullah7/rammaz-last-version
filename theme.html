@@ -18,165 +18,115 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Side Panel -->
-        <div class="sidePanel">
-            <div class="sidePanel-header">
-                <div class="sidePanel-controlling">
-                    <div
-                        class="controls"
-                        onclick="
-                            document
-                                .querySelector('.sidePanel')
-                                .classList.toggle('active')
-                        "
-                    >
-                        <svg width="24" height="24" class="menu">
-                            <use href="./assets/icons.svg#menu"></use>
-                        </svg>
-                        <svg width="24" height="24" class="close">
-                            <use href="./assets/icons.svg#close"></use>
-                        </svg>
-                    </div>
-                    <img
-                        class="logo"
-                        src="./assets/imgs/Favicon/Favicon.png"
-                        alt=""
-                    />
+    <!-- Side Panel -->
+    <div class="sidePanel">
+        <!-- SP Header -->
+        <div class="sidePanel-header">
+            <!-- SP Top Header Section -->
+            <div class="sidePanel-controlling">
+                <!-- Mobiles Controlling (Open and Close SP in Mobiles Version) -->
+                <div class="controls" onclick="document.querySelector('.sidePanel').classList.toggle('active')">
+                    <svg width="24" height="24" class="menu">
+                        <use xlink:href="./assets/icons.svg#menu"></use>
+                    </svg>
+                    <svg width="24" height="24" class="close">
+                        <use xlink:href="./assets/icons.svg#close"></use>
+                    </svg>
                 </div>
-                <div class="profileInfo">
-                    <div class="item userImg">
-                        <img src="./assets/imgs/67982210.png" alt="" />
-                    </div>
-                    <p class="name">Abdullah</p>
-                </div>
-                <div class="itemsContainer">
-                    <a
-                        href="./home.html"
-                        class="item"
-                        title="Home"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#home"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        class="item"
-                        title="Exit"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#logout"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+
+                <!-- Website Logo -->
+                <img class="logo" src="./assets/imgs/Logo/logo-icon/whiteColor.svg" alt="Website Logo">
             </div>
-            <div class="sidePanel-links">
-                <div class="itemsContainer">
-                    <a
-                        href="./qrcodes.html"
-                        class="item"
-                        title="Qrcodes"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#qrcode"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="./create-qrcode.html"
-                        class="item"
-                        title="Create Qrcode"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#add"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="./themes.html"
-                        class="item active"
-                        title="Themes"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#colors"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        class="item"
-                        title="Create Theme"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#add"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="./groups.html"
-                        class="item"
-                        title="Groups"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#groups"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        class="item"
-                        title="Create Group"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#add"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        class="item"
-                        title="V-Cards"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#vcard"></use>
-                            </svg>
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        class="item"
-                        title="Create V-Card"
-                        onclick="sidePanelLinksHandlling(this)"
-                    >
-                        <div class="icon">
-                            <svg width="24" height="24">
-                                <use href="./assets/icons.svg#add"></use>
-                            </svg>
-                        </div>
-                    </a>
+
+            <!-- User Information -->
+            <div class="profileInfo">
+                <div class="item userImg">
+                    <img src="./assets/imgs/67982210.png" alt="User Image">
                 </div>
+                <p class="name">Abdullah</p>
+            </div>
+
+            <!-- SP Header Navegation Items -->
+            <div class="itemsContainer">
+                <a href="./home.html" class="item" title="Home" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#home"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Exit" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#logout"></use>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
+
+        <!-- SP Body -->
+        <div class="sidePanel-links">
+            <div class="itemsContainer">
+                <a href="./qrcodes.html" class="item" title="Qrcodes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#qrcode"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./create-qrcode.html" class="item" title="Create Qrcode" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./themes.html" class="item active" title="Themes" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#colors"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Theme" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="./groups.html" class="item" title="Groups" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#groups"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create Group" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="V-Cards" onclick3="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#vcard"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="item" title="Create V-Card" onclick="sidePanelLinksHandlling(this)">
+                    <div class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/icons.svg#add"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
         <!-- Main Container -->
         <div class="main">
@@ -187,7 +137,7 @@
                     <a href="./home.html" class="navigatorStart">
                         <div class="icon">
                             <svg width="24" height="24">
-                              <use xlink:href="./assets/icons.svg#home"></use>
+                                <use xlink:href="./assets/tafanee-icons.svg#home"></use>
                             </svg>
                         </div>
                     </a>
@@ -245,37 +195,34 @@
             <div class="footer">
                 <div class="websiteInformation">
                     <a href="./home.html" class="websiteLogo">
-                        <img
-                            src="./assets/imgs/Logo/icon-text/darkBlue.svg"
-                            alt="Website Logo"
-                        />
+                        <img src="./assets/imgs/Logo/icon-text/darkBlue.svg" alt="Website Logo"/>
                     </a>
 
                     <!-- website Social Accounts -->
                     <div class="websiteSocial">
                         <a href="#" class="BTN Primary-BTN Icon-BTN">
                             <svg width="24" height="24">
-                                <use href="./assets/icons.svg#whatsapp"></use>
+                                <use xlink:href="./assets/icons.svg#whatsapp"></use>
                             </svg>
                         </a>
                         <a href="#" class="BTN Primary-BTN Icon-BTN">
                             <svg width="24" height="24">
-                                <use href="./assets/icons.svg#twitter"></use>
+                                <use xlink:href="./assets/icons.svg#twitter"></use>
                             </svg>
                         </a>
                         <a href="#" class="BTN Primary-BTN Icon-BTN">
                             <svg width="24" height="24">
-                                <use href="./assets/icons.svg#instagram"></use>
+                                <use xlink:href="./assets/icons.svg#instagram"></use>
                             </svg>
                         </a>
                         <a href="#" class="BTN Primary-BTN Icon-BTN">
                             <svg width="24" height="24">
-                                <use href="./assets/icons.svg#tiktok"></use>
+                                <use xlink:href="./assets/icons.svg#tiktok"></use>
                             </svg>
                         </a>
                         <a href="#" class="BTN Primary-BTN Icon-BTN">
                             <svg width="24" height="24">
-                                <use href="./assets/icons.svg#snapchat"></use>
+                                <use xlink:href="./assets/icons.svg#snapchat"></use>
                             </svg>
                         </a>
                     </div>
@@ -297,7 +244,7 @@
             <!-- Top Scrolling Button -->
             <div class="topArrow" onclick="window.scrollTo(0, 0)">
                 <svg width="24" height="24">
-                    <use href="./assets/icons.svg#up-arrow"></use>
+                    <use xlink:href="./assets/icons.svg#up-arrow"></use>
                 </svg>
             </div>
         </div>

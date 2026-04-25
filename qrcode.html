@@ -16,96 +16,107 @@
 <body>
     <!-- Side Panel -->
     <div class="sidePanel">
+        <!-- SP Header -->
         <div class="sidePanel-header">
+            <!-- SP Top Header Section -->
             <div class="sidePanel-controlling">
+                <!-- Mobiles Controlling (Open and Close SP in Mobiles Version) -->
                 <div class="controls" onclick="document.querySelector('.sidePanel').classList.toggle('active')">
                     <svg width="24" height="24" class="menu">
-                        <use href="./assets/icons.svg#menu"></use>
+                        <use xlink:href="./assets/icons.svg#menu"></use>
                     </svg>
                     <svg width="24" height="24" class="close">
-                        <use href="./assets/icons.svg#close"></use>
+                        <use xlink:href="./assets/icons.svg#close"></use>
                     </svg>
                 </div>
-                <img class="logo" src="./assets/imgs/Favicon/Favicon.png" alt="">
+
+                <!-- Website Logo -->
+                <img class="logo" src="./assets/imgs/Logo/logo-icon/whiteColor.svg" alt="Website Logo">
             </div>
+
+            <!-- User Information -->
             <div class="profileInfo">
                 <div class="item userImg">
-                    <img src="./assets/imgs/67982210.png" alt="">
+                    <img src="./assets/imgs/67982210.png" alt="User Image">
                 </div>
                 <p class="name">Abdullah</p>
             </div>
+
+            <!-- SP Header Navegation Items -->
             <div class="itemsContainer">
                 <a href="./home.html" class="item" title="Home" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#home"></use>
+                            <use xlink:href="./assets/icons.svg#home"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="item" title="Exit" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#logout"></use>
+                            <use xlink:href="./assets/icons.svg#logout"></use>
                         </svg>
                     </div>
                 </a>
             </div>
         </div>
+
+        <!-- SP Body -->
         <div class="sidePanel-links">
             <div class="itemsContainer">
                 <a href="./qrcodes.html" class="item active" title="Qrcodes" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#qrcode"></use>
+                            <use xlink:href="./assets/icons.svg#qrcode"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="./create-qrcode.html" class="item" title="Create Qrcode" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#add"></use>
+                            <use xlink:href="./assets/icons.svg#add"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="./themes.html" class="item" title="Themes" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#colors"></use>
+                            <use xlink:href="./assets/icons.svg#colors"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="item" title="Create Theme" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#add"></use>
+                            <use xlink:href="./assets/icons.svg#add"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="./groups.html" class="item" title="Groups" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#groups"></use>
+                            <use xlink:href="./assets/icons.svg#groups"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="item" title="Create Group" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#add"></use>
+                            <use xlink:href="./assets/icons.svg#add"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="item" title="V-Cards" onclick3="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#vcard"></use>
+                            <use xlink:href="./assets/icons.svg#vcard"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="item" title="Create V-Card" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#add"></use>
+                            <use xlink:href="./assets/icons.svg#add"></use>
                         </svg>
                     </div>
                 </a>
@@ -121,8 +132,8 @@
             <div class="navigator">
                 <a href="./home.html" class="navigatorStart">
                     <div class="icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M18.2251 21.5326C18.371 21.5414 18.5172 21.5192 18.6539 21.4674C18.7907 21.4156 18.9149 21.3354 19.0183 21.232C19.1217 21.1287 19.2021 21.0045 19.254 20.8678C19.3059 20.7311 19.3282 20.5849 19.3195 20.439V10.5918C19.3281 10.4206 19.2923 10.25 19.2156 10.0967C19.139 9.94335 19.024 9.81242 18.8819 9.71658L12.3171 4.24618C12.1143 4.0867 11.8638 4 11.6059 4C11.3479 4 11.0974 4.0867 10.8947 4.24618L4.32986 9.71658C4.11077 9.9545 3.9931 10.2685 4.00186 10.5918V20.439C3.9931 20.5849 4.01541 20.7311 4.06732 20.8678C4.11924 21.0045 4.19957 21.1287 4.303 21.232C4.40644 21.3354 4.53063 21.4156 4.66737 21.4674C4.80412 21.5192 4.9503 21.5414 5.09626 21.5326H9.47306V16.0622H13.8499V21.5326H18.2251Z" fill="currentColor"/>
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/tafanee-icons.svg#home"></use>
                         </svg>
                     </div>
                 </a>
@@ -185,7 +196,7 @@
                         <div class="BTN Primary-BTN">
                             <div class="BTNicon">
                                 <svg width="24" height="24">
-                                  <use xlink:href="./assets/icons.svg#download"></use>
+                                    <use xlink:href="./assets/icons.svg#download"></use>
                                 </svg>
                             </div>
                             <p>Download</p>
@@ -206,27 +217,27 @@
                 <div class="websiteSocial">
                     <a href="#" class="BTN Primary-BTN Icon-BTN">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#whatsapp"></use>
+                            <use xlink:href="./assets/icons.svg#whatsapp"></use>
                         </svg>
                     </a>
                     <a href="#" class="BTN Primary-BTN Icon-BTN">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#twitter"></use>
+                            <use xlink:href="./assets/icons.svg#twitter"></use>
                         </svg>
                     </a>
                     <a href="#" class="BTN Primary-BTN Icon-BTN">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#instagram"></use>
+                            <use xlink:href="./assets/icons.svg#instagram"></use>
                         </svg>
                     </a>
                     <a href="#" class="BTN Primary-BTN Icon-BTN">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#tiktok"></use>
+                            <use xlink:href="./assets/icons.svg#tiktok"></use>
                         </svg>
                     </a>
                     <a href="#" class="BTN Primary-BTN Icon-BTN">
                         <svg width="24" height="24">
-                            <use href="./assets/icons.svg#snapchat"></use>
+                            <use xlink:href="./assets/icons.svg#snapchat"></use>
                         </svg>
                     </a>
                 </div>
@@ -248,7 +259,7 @@
         <!-- Top Scrolling Button -->
         <div class="topArrow" onclick="window.scrollTo(0,0)">
             <svg width="24" height="24">
-                <use href="./assets/icons.svg#up-arrow"></use>
+                <use xlink:href="./assets/icons.svg#up-arrow"></use>
             </svg>
         </div>
     </div>

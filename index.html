@@ -41,8 +41,11 @@
 <body>
     <!-- Side Panel -->
     <div class="sidePanel">
+        <!-- SP Header -->
         <div class="sidePanel-header">
+            <!-- SP Top Header Section -->
             <div class="sidePanel-controlling">
+                <!-- Mobiles Controlling (Open and Close SP in Mobiles Version) -->
                 <div class="controls" onclick="document.querySelector('.sidePanel').classList.toggle('active')">
                     <svg width="24" height="24" class="menu">
                         <use xlink:href="./assets/icons.svg#menu"></use>
@@ -51,14 +54,20 @@
                         <use xlink:href="./assets/icons.svg#close"></use>
                     </svg>
                 </div>
-                <img class="logo" src="./assets/imgs/Favicon/Favicon.png" alt="">
+
+                <!-- Website Logo -->
+                <img class="logo" src="./assets/imgs/Logo/logo-icon/whiteColor.svg" alt="Website Logo">
             </div>
+
+            <!-- User Information -->
             <div class="profileInfo">
                 <div class="item userImg">
-                    <img src="./assets/imgs/67982210.png" alt="">
+                    <img src="./assets/imgs/67982210.png" alt="User Image">
                 </div>
                 <p class="name">Abdullah</p>
             </div>
+
+            <!-- SP Header Navegation Items -->
             <div class="itemsContainer">
                 <a href="#" class="item" title="Home" onclick="sidePanelLinksHandlling(this)">
                     <div class="icon">
@@ -95,7 +104,7 @@
             </div>
         </div>
 
-        <!-- Side Panel Links -->
+        <!-- SP Body -->
         <div class="sidePanel-links">
             <div class="itemsContainer">
                 <a href="#CSSFiles" class="item" title="CSS Files" onclick="sidePanelLinksHandlling(this)">
@@ -4020,17 +4029,15 @@
                 <div class="sctionContent">
                     <!-- Search -->
                     <div class="searchHeader">
-                        <div class="searchInput">
-                            <div class="input">
-                                <div class="inputContainer">
-                                    <input type="text" name="defualt-input" id="defualt-input" placeholder="Search" oninput="inputHandlling(this)">
-                                </div>
+                        <div class="input">
+                            <div class="inputContainer">
+                                <input type="text" name="defualt-input" id="defualt-input" placeholder="Search" oninput="inputHandlling(this)">
                             </div>
-                            <div class="BTN Primary-BTN Icon-BTN" onclick="iconsSearch(this.parentNode.querySelector('input'))">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./assets/icons.svg#search"></use>
-                                </svg>
-                            </div>
+                        </div>
+                        <div class="BTN Primary-BTN Icon-BTN" onclick="iconsSearch(this.parentNode.querySelector('input'))">
+                            <svg width="24" height="24">
+                                <use xlink:href="./assets/icons.svg#search"></use>
+                            </svg>
                         </div>
                         <p class="searchResult"></p>
                     </div>

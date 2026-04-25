@@ -312,14 +312,14 @@ function copyElement(ele) {
     ele.classList.add('copied')
     ele.innerHTML = `
     <svg width="24" height="24">
-        <use href="./assets/icons.svg#checkmark"></use>
+        <use xlink:href="./assets/icons.svg#checkmark"></use>
     </svg>
     `
     setTimeout(() => {
         ele.classList.remove('copied')
         ele.innerHTML = `
         <svg width="18" height="18">
-            <use href="./assets/icons.svg#copy"></use>
+            <use xlink:href="./assets/icons.svg#copy"></use>
         </svg>
         `
         selection.removeRange(range);
@@ -353,7 +353,7 @@ fetch('assets/icons.svg').then(response => response.text()).then(data => {
         <div class="iconContainer">
             <div class="icon" id="${icon.id}" onclick="copyIcon(this)">
                 <svg width="24" height="24">
-                    <use href="./assets/icons.svg#${icon.id}"></use>
+                    <use xlink:href="./assets/icons.svg#${icon.id}"></use>
                 </svg>
             </div>
             <p class="p-xxs">${icon.id}</p>
@@ -377,7 +377,7 @@ fetch('assets/tafanee-icons.svg').then(response => response.text()).then(data =>
         <div class="iconContainer">
             <div class="icon" id="${icon.id}" onclick="copyIcon(this)">
                 <svg width="24" height="24">
-                    <use href="./assets/tafanee-icons.svg#${icon.id}"></use>
+                    <use xlink:href="./assets/tafanee-icons.svg#${icon.id}"></use>
                 </svg>
             </div>
             <p class="p-xxs">${icon.id}</p>
